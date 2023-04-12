@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">Simple Game Suit<h1>
+<h1 style="text-align:center;">Simple Game Suit <h1>
 
 This simple game suit was created on April 12, 2023
 

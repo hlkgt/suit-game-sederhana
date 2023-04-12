@@ -1,0 +1,129 @@
+/* Resize Margin and Padding */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set Font Poppins from Google */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container  Start*/
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .info-game {
+  width: 35rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 2rem;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+.container .info-game button {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  display: none;
+  top: 16px;
+  right: 20px;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #cccccc;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.container .info-game button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+.container .box-suit {
+  width: 35rem;
+  height: 27rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.container .box-suit .player-area {
+  height: 50%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+.container .box-suit .player-area h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+.container .box-suit .player-area .list-icon {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-suit .player-area .list-icon .box-icon {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: none;
+}
+.container .box-suit .player-area .list-icon .box-icon:hover {
+  background-color: #999999;
+  color: #ffffff;
+}
+.container .box-suit .com-area {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-suit .com-area .box-icon {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  font-size: 2.5rem;
+}
+/* Container End */
+
+/* Media Query Phone */
+@media screen and (max-width: 586px) {
+  .container .info-game {
+    width: 80%;
+  }
+  .container .box-suit {
+    width: 80%;
+    height: 30rem;
+  }
+  .container .box-suit .player-area .list-icon {
+    height: 50%;
+    margin-top: 40px;
+  }
+  .container .info-game button {
+    width: 2rem;
+    height: 2rem;
+    top: 25px;
+    right: 10px;
+    font-size: 1rem;
+  }
+}

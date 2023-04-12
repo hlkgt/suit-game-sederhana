@@ -15,4 +15,4 @@ Rules : <br>
 => Scissor meet paper, scissors win <br>
 => Paper meet stone, paper win <br>
 
-Visit the following link to play : <a href="https://gamesuitsederhana.haioel.repl.co" target="_blank">https://gamesuitsederhana.haioel.repl.co</a>
+Visit the following link to play : <a href="https://gamesuitsederhana.haioel.repl.co">https://gamesuitsederhana.haioel.repl.co</a>

@@ -66,10 +66,26 @@ const disablePlayerIcons = () => {
 iconPlayer.forEach((icon, index) => {
   icon.addEventListener("click", function () {
     choicePlayer = icon.getAttribute("data-icon");
+    switch (choicePlayer) {
+      case "batu":
+        iconPlayer[1].style.display = "none";
+        iconPlayer[2].style.display = "none";
+        break;
+      case "gunting":
+        iconPlayer[0].style.display = "none";
+        iconPlayer[2].style.display = "none";
+        break;
+      case "kertas":
+        iconPlayer[0].style.display = "none";
+        iconPlayer[1].style.display = "none";
+        break;
+      default:
+        break;
+    }
     choiceCom = getChoiceCom();
     rules(choicePlayer, choiceCom);
     displayChoice(choiceCom);
-    areaInfo.innerHTML = info;
+    areaInfo.append(info);
     refreshButton.style.display = "block";
     disablePlayerIcons();
     displayResult(info);
